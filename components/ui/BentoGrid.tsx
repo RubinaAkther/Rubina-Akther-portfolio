@@ -1,6 +1,13 @@
+'use client';
+
+import animationData from '@/data/confetti.json';
 import { cn } from '@/lib/utils';
+import { useState } from 'react';
+import { IoCopyOutline } from 'react-icons/io5';
+import Lottie from 'react-lottie';
 import { BackgroundGradientAnimation } from './GradientBg';
 import { GlobeDemo } from './GridGlobe';
+import MagicButton from './MagicButton';
 
 export const BentoGrid = ({
   className,
@@ -42,10 +49,17 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImage?: string;
 }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('rubinaakther3454@gmail.com');
+
+    setCopied(true);
+  };
   return (
     <div
       className={cn(
-        'overflow-hidden row-span-1 relative overflow-hidden rounded-3xl border border-white/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4',
+        'overflow-hidden row-span-1 relative  rounded-3xl border border-white/10 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4',
         className,
       )}
       style={{
@@ -54,7 +68,7 @@ export const BentoGridItem = ({
           'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
       }}
     >
-      <div className={`${id === 6} && 'flex justify-center h-full`}>
+      <div className={cn(id=== 6 && 'flex flex-col items-center justify-center h-full')}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -77,7 +91,7 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold" />
+            {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
           </BackgroundGradientAnimation>
         )}
         <div
@@ -98,7 +112,19 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
-                {['React.js', 'Next.js', 'JavaScript'].map((item) => (
+                {['React.js', 'Next.js', 'MongoDB'].map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="py-4 px-3 rouded-lg text-center bg-[#10132e]"></span>
+              </div>
+              <div className="flex flex-col gap-3 lg:gap-8">
+                <span className="py-4 px-3 rouded-lg text-center bg-[#10132e]"></span>
+                {['Docker', 'Jenkins', 'Kubernetes'].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
@@ -107,6 +133,30 @@ export const BentoGridItem = ({
                   </span>
                 ))}
               </div>
+            </div>
+          )}
+
+          {id === 6 && (
+            <div className="mt-5 relative">
+              <div className={`absolute -bottom-5 right-0`}>
+                <Lottie
+                  options={{
+                    loop: copied,
+                    autoplay: copied,
+                    animationData,
+                    rendererSettings: {
+                      preserveAspectRatio: 'xMidYMid slice',
+                    },
+                  }}
+                />
+              </div>
+              <MagicButton
+                title={copied ? 'Email copied' : 'Copy my email'}
+                position={'left'}
+                icon={<IoCopyOutline />}
+                otherClasses="!bg-[#161a31] relative z-50"
+                handleClick={handleCopy}
+              />
             </div>
           )}
         </div>

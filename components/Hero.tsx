@@ -18,7 +18,7 @@ export default function Hero() {
         />
         <Spotlight className="top-28 left-80  h-[80vh] w-[50vw]" fill="blue" />
       </div>
-      <div className="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-[#000319] ">
+      <div className="absolute top-0 left-0 flex h-screen w-full items-center justify-center bg-[#000319] ">
         <div
           className={cn(
             'absolute inset-0',

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
 
-@theme inline {
+
+/* @theme inline {
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
@@ -61,4 +61,4 @@
       transform: translateY(-50%);
     }
   }
-}
+} */
