@@ -4,16 +4,16 @@ import { FaArrowRight } from 'react-icons/fa';
 
 function RecentProjects() {
   return (
-    <div className="py-20 ">
+    <div className="pt-35 " id='projects'>
       <div className="heading text-4xl font-bold text-center">
         A small selection of{' '}
-        <span className="text-purple-300"> recentProjects</span>
+        <span className="text-purple-300"> Recent Projects</span>
       </div>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 mt-25">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className=" h-[30rem] lg:min-h-[32.5rem]flex items-center justify-center sm:w-96 w-[80vw]"
+            className=" h-[25rem] lg:min-h-[32.5rem]flex items-center justify-center sm:w-96 w-[80vw]"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
