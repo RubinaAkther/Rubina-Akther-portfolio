@@ -30,12 +30,12 @@ export default function RootLayout({
         <link rel="icon" href="/ruby.png" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem = {false}
           disableTransitionOnChange
         >
           {children}
