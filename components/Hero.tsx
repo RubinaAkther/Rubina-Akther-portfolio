@@ -24,7 +24,7 @@ export default function Hero() {
             'absolute inset-0',
             'bg-size-[100px_100px]',
             'bg-[linear-gradient(to_right,rgba(228,228,231,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(228,228,231,0.3)_1px,transparent_1px)]',
-            'dark:bg-[linear-gradient(to_right,rgba(38,38,38,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(38,38,38,0.3)_1px,transparent_1px)]'
+            'dark:bg-[linear-gradient(to_right,rgba(38,38,38,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(38,38,38,0.3)_1px,transparent_1px)]',
           )}
         />
 
@@ -35,14 +35,14 @@ export default function Hero() {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h1 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Creating Modern Web Apps with MERN & DevOps
+            Building Scalable & Modern Web Applications with the MERN Stack
           </h1>
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5pxl lg:text-6xl "
-            words={'From Code to Cloud – I Make it Happen '}
+            className="text-center text-[40px] md:text-5pxl lg:text-[50px] my-5 "
+            words={'Turning Ideas into Powerful MERN Applications'}
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Rubina, Your Next Full-Stack Engineer
+            Hi, I&apos;m Rubina, Your Next MERN Stack Developer.
           </p>
           <a href="#about">
             <MagicButton

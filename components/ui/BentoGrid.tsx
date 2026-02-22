@@ -68,7 +68,11 @@ export const BentoGridItem = ({
           'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)',
       }}
     >
-      <div className={cn(id=== 6 && 'flex flex-col items-center justify-center h-full')}>
+      <div
+        className={cn(
+          id === 6 && 'flex flex-col items-center justify-center h-full',
+        )}
+      >
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -107,31 +111,35 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && <GlobeDemo/>}
+          {id === 2 && <GlobeDemo />}
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
-                {['React.js', 'Next.js', 'MongoDB'].map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
+                {['JavaScript', 'React.js', 'Next.js', 'MongoDB'].map(
+                  (item) => (
+                    <span
+                      key={item}
+                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    >
+                      {item}
+                    </span>
+                  ),
+                )}
                 <span className="py-4 px-3 rouded-lg text-center bg-[#10132e]"></span>
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 <span className="py-4 px-3 rouded-lg text-center bg-[#10132e]"></span>
-                {['Docker', 'Jenkins', 'Kubernetes'].map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
+                {['Node.js', 'Express.js', 'Tailwind CSS', 'Git & GitHub'].map(
+                  (item) => (
+                    <span
+                      key={item}
+                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    >
+                      {item}
+                    </span>
+                  ),
+                )}
               </div>
             </div>
           )}

@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Building MERN applications with Docker, CI/CD & cloud deployment",
+    title: "Developing full-stack MERN applications from idea to deployment",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,11 +72,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with tHer captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "WiseTutor – Educational Website",
+    des: "A responsive web platform built with HTML, CSS, Bootstrap and JavaScript to provide interactive learning resources.",
+    img: "/p1.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/RubinaAkther",
+    link: "https://github.com/RubinaAkther/WiseTutor",
   },
   {
     id: 2,
@@ -173,29 +173,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full-Stack Web Development Training",
+    desc: "Completed focused MERN stack training, building real-world projects and mastering React, Node.js, and MongoDB.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Open-Source Contributions",
+    desc: "Contributed to GitHub projects, fixing bugs and adding features using React.js and Node.js.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Personal Projects",
+    desc: "Built multiple web applications as practice, improving full-stack development skills with MERN.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Portfolio & Showcase Projects",
+    desc: "Created a personal portfolio to demonstrate MERN projects, skills, and professional growth.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
