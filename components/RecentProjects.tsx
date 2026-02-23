@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { projects } from '@/data';
 import { PinContainer } from './ui/3d-pin';
 import { FaArrowRight } from 'react-icons/fa';
@@ -13,7 +14,7 @@ function RecentProjects() {
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className=" h-[25rem] lg:min-h-[32.5rem]flex items-center justify-center sm:w-96 w-[80vw]"
+            className=" h-100 lg:min-h-[32.5rem]flex items-center justify-center sm:w-96 w-[80vw]"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
@@ -33,7 +34,7 @@ function RecentProjects() {
                   {iconLists.map((icon, index) => (
                     <div
                       key={icon}
-                      className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{transform:`translateX(-${5 * index * 2}px)`}}
+                      className="border border-white/20 rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center" style={{transform:`translateX(-${5 * index * 2}px)`}}
                     >
                       <img src={icon} alt={icon} className="p-2" />
                     </div>
