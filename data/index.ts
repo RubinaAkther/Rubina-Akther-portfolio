@@ -72,6 +72,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: 'Resturant Website',
+    des: 'A dynamic multi-page restaurant website developed using HTML, CSS, and JavaScript, featuring a responsive design and seamless navigation.',
+    img: '/p3.png',
+    iconLists: ['/html.png', '/css.png', '/js.png'],
+    link: 'https://github.com/RubinaAkther/html-css-demo-restaurant-website',
+  },
+  {
+    id: 2,
     title: 'WiseTutor – Educational Website',
     des: 'A responsive web platform built with HTML, CSS, Bootstrap and JavaScript to provide interactive learning resources.',
     img: '/p1.png',
@@ -79,7 +87,7 @@ export const projects = [
     link: 'https://github.com/RubinaAkther/WiseTutor',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Agency AI - A modern, responsive agency website',
     des: 'Built with React, Vite, and TailwindCSS, featuring smooth animations and interactive components.',
     img: '/agency_ai.png',
@@ -87,20 +95,18 @@ export const projects = [
     link: 'https://github.com/RubinaAkther/Agency.AI',
   },
   {
-    id: 3,
-    title: 'AI Image SaaS - Canva Application',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
-    img: '/p3.svg',
-    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
-    link: 'https://github.com/RubinaAkther',
-  },
-  {
     id: 4,
-    title: 'Animated Apple Iphone 3D Website',
-    des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
-    img: '/p4.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
-    link: 'https://github.com/RubinaAkther',
+    title: 'Forever Ecommerce Project',
+    des: 'Full Stack E-commerce Website using React JS, MongoDB, Express JS, Node JS, Stripe and Razorpay.',
+    img: '/p4.png',
+    iconLists: [
+      '/re.svg',
+      '/tail.svg',
+      '/mongodb.png',
+      '/express.png',
+      '/node.png',
+    ],
+    link: 'https://github.com/RubinaAkther/Forever-Ecommerce-Project',
   },
 ];
 
