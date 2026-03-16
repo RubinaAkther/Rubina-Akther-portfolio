@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main
       style={{ backgroundColor: '#000319' }}
-      className="relative bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-15 px-5 overflow-x-hidden"
+      className="relative bg-black flex justify-center items-center flex-col  mx-auto sm:px-15 px-5 overflow-x-hidden"
     >
       <div className="max-w-7xl w-full ">
         <FloatingNav navItems={navItems} />

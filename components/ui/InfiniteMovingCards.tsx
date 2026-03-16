@@ -1,4 +1,5 @@
-/* eslint-disable react-hooks/immutability */
+/* eslint-disable react-hooks/exhaustive-deps */
+
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
@@ -97,7 +98,7 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%+4px)] w-[calc(100%+4px)]"
               ></div>
-              <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
+              <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-100 dark:text-gray-100">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
@@ -108,7 +109,7 @@ export const InfiniteMovingCards = ({
                   <span className="text-sm leading-[1.6] font-bold text-white dark:text-gray-100 ">
                     {item.name}
                   </span>
-                  <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
+                  <span className="text-sm leading-[1.6] font-normal text-neutral-300 dark:text-gray-400">
                     {item.title}
                   </span>
                 </span>

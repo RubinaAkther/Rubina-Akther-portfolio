@@ -6,7 +6,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect';
 
 export default function Hero() {
   return (
-    <div>
+    <div className="">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -18,18 +18,18 @@ export default function Hero() {
         />
         <Spotlight className="top-28 left-80  h-[80vh] w-[50vw]" fill="blue" />
       </div>
-      <div className="absolute top-0 left-0 flex h-screen w-full items-center justify-center bg-[#000319] ">
+      <div className="absolute top-0 left-0 flex h-screen w-full items-center justify-center bg-[#000319]">
+        {/* Grid Layer */}
         <div
           className={cn(
             'absolute inset-0',
-            'bg-size-[100px_100px]',
-            'bg-[linear-gradient(to_right,rgba(228,228,231,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(228,228,231,0.3)_1px,transparent_1px)]',
-            'dark:bg-[linear-gradient(to_right,rgba(38,38,38,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(38,38,38,0.3)_1px,transparent_1px)]',
+            'bg-[linear-gradient(to_right,rgba(228,228,231,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(228,228,231,0.1)_1px,transparent_1px)]',
+            'bg-size-[80px_80px]', // Adjusted for a cleaner grid look
           )}
         />
 
-        {/* Radial gradient for the container to give a faded look */}
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white mask-[radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
+        {/* Radial Mask Layer - Changed bg-white to bg-[#000319] to keep it dark */}
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#000319] mask-[radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
