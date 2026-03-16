@@ -110,39 +110,99 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
+// export const testimonials = [
+//   {
+//     quote:
+//       "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
+//     name: 'Michael Johnson',
+//     title: 'Director of AlphaStream Technologies',
+//   },
+//   {
+//     quote:
+//       "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
+//     name: 'Sayma ',
+//     title: 'Director of AlphaStream Technologies',
+//   },
+//   {
+//     quote:
+//       "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
+//     name: 'Nafiz Rahman',
+//     title: 'Director of AlphaStream Technologies',
+//   },
+//   {
+//     quote:
+//       "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
+//     name: 'Shahajadi Akter',
+//     title: 'Director of AlphaStream Technologies',
+//   },
+//   {
+//     quote:
+//       "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
+//     name: 'M K Omar',
+//     title: 'Director of AlphaStream Technologies',
+//   },
+// ];
+
+// certificate
+export const certificates = [
   {
     quote:
-      "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      'Achieved a marks score of 90% in modern web design focusing on HTML5, CSS3, and interactive elements.',
+    name: 'Complete Web Design',
+    title: 'eShikhon',
+    img: '/eshikhon.jpg',
   },
   {
     quote:
-      "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
-    name: 'Sayma ',
-    title: 'Director of AlphaStream Technologies',
+      'Gained hands-on experience building scalable web applications and professional-grade backend architectures using the MERN stack.',
+    name: 'MERN Stack Web Development',
+    title: 'Interactive Cares',
+    img: '/interactive.png',
   },
   {
     quote:
-      "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
-    name: 'Nafiz Rahman',
-    title: 'Director of AlphaStream Technologies',
+      'Successfully completed Reactive Accelerator course, mastering advanced JavaScript, React Hooks, and Next.js fundamentals.',
+    name: 'Reactive Accelerator (Batch 3)',
+    title: 'Learn with Sumit (LWS)',
+    img: '/lwsC.png',
   },
   {
     quote:
-      "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
-    name: 'Shahajadi Akter',
-    title: 'Director of AlphaStream Technologies',
+      "Recognized for 'Extraordinary' performance during the Reactive Accelerator. Completed 8 small/medium projects and 1 large-scale project, mastering Server Components, API integration, and Internationalization.",
+    name: 'Letter of Recommendation',
+    title: 'Sumit Saha, Founder of Learn with Sumit',
+    img: '/lwsR.png',
+  },
+
+  {
+    quote:
+      'Achieved a marks score of 90% in modern web design focusing on HTML5, CSS3, and interactive elements.',
+    name: 'Complete Web Design',
+    title: 'eShikhon',
+    img: '/eshikhon.jpg',
   },
   {
     quote:
-      "Collaborating with Rubina was an absolute pleasure. Her professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Rubina's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Rubina is the ideal partner.",
-    name: 'M K Omar',
-    title: 'Director of AlphaStream Technologies',
+      'Gained hands-on experience building scalable web applications and professional-grade backend architectures using the MERN stack.',
+    name: 'MERN Stack Web Development',
+    title: 'Interactive Cares',
+    img: '/interactive.png',
+  },
+  {
+    quote:
+      'Successfully completed Reactive Accelerator course, mastering advanced JavaScript, React Hooks, and Next.js fundamentals.',
+    name: 'Reactive Accelerator (Batch 3)',
+    title: 'Learn with Sumit (LWS)',
+    img: '/lwsC.png',
+  },
+  {
+    quote:
+      "Recognized for 'Extraordinary' performance during the Reactive Accelerator. Completed 8 small/medium projects and 1 large-scale project, mastering Server Components, API integration, and Internationalization.",
+    name: 'Letter of Recommendation',
+    title: 'Sumit Saha, Founder of Learn with Sumit',
+    img: '/lwsR.png',
   },
 ];
-
 export const companies = [
   {
     id: 1,
